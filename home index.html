@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Convenience</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script  src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <link href='http://fonts.googleapis.com/css?family=Vast+Shadow' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="dist/css/bootstrap.css">
+  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="dist/css/com-header.css">
+  <style>
+*{
+  box-sizing: border-box;
+}
+.column {
+  float:left;
+  width:33.33%
+  padding:15px;
+}
+
+.row:after{
+  content:"";
+  display: table;
+  clear:both;
+}
+
+@media screen and (max-width:600px) {
+  .colum{
+    width: 100%;
+  }
+}
+</style>
+</head>
+
+
+<body>
+<link rel="stylesheet" type="text/css" href="dist/css/com-header.css">
+
+<header class="com-header">
+<div class="header-bar">
+  <div class="header-content clearfix">
+    <div class="header-bar-position" style="display: block;">
+      <span class="header-icon icon-header_location"></span>
+      <span class="current-city">Jököping</span>
+      <a class="change-city" href="http://www.meituan.com/changecity/">change-city</a>
+      <div class="near-citys">
+        [<a class="city-guess" href="http://dachangzizhixian.meituan.com">London</a>
+        <a class="city-guess" href="http://lf.meituan.com">Stockholm</a>
+        <a class="city-guess" href="http://sanhe.meituan.com">Birmingham</a>]
+      </div>
+      <div class="user-entry" style="display: inline-block;">
+        <a class="growth-entry user-importent" href="https://passport.meituan.com/account/unitivelogin?service=www&amp;continue=http%3A%2F%2Fwww.meituan.com%2Faccount%2Fsettoken%3Fcontinue%3Dhttp%253A%252F%252Fbj.meituan.com%252F">login-container</a>
+        <a class="extra-entry" href="https://passport.meituan.com/account/unitivesignup?service=www&amp;continue=http%3A%2F%2Fwww.meituan.com%2Faccount%2Fsettoken%3Fcontinue%3Dhttp%253A%252F%252Fbj.meituan.com%252F">Sign in</a>
+      </div>
+    </div>
+    <nav class="header-bar-nav">
+      <ul class="header-nav-first">
+        <li class="has-child">
+          <a rel="nofollow" href="http://www.meituan.com/account/userinfo/" target="_blank">My Convenience</a>
+          <ul class="header-nav-my header-nav-second" style="display: none;">
+            <a rel="nofollow" href="http://www.meituan.com/account/userinfo/" target="_blank"></a>
+            <li><a rel="nofollow" href="http://www.meituan.com/account/userinfo/" target="_blank"></a>
+              <a rel="nofollow" href="http://www.meituan.com/orders/" target="_blank">My Orders</a></li>
+            <li><a rel="nofollow" href="http://www.meituan.com/rates/" target="_blank">My reviews</a></li>
+            <li><a rel="nofollow" href="http://www.meituan.com/collections/" target="_blank">My Favorite</a></li>
+            <li><a rel="nofollow" href="http://www.meituan.com/vouchers/" target="_blank">My Coupon</a></li>
+            <li><a rel="nofollow" href="http://www.meituan.com/account/settings" target="_blank">Setting Account</a></li>
+          </ul>
+        </li>
+        <li><a href="http://i.meituan.com/mobile/down/meituan" target="_blank">Mobile APP</a></li>
+        <li class="has-child">
+          <a rel="nofollow" href="http://www.meituan.com/account/userinfo/" target="_blank">Merchants center</a>
+          <ul class="header-nav-merchant header-nav-second" style="display: none;">
+            <li><a rel="nofollow" href="http://e.meituan.com/" target="_blank">log in</a></li>
+            <li><a rel="nofollow" href="https://ecom.meituan.com/bizsettle/settle/merchantsSettle?utm_source=mt_C_my" target="_blank">Corporate</a></li>
+            <li><a rel="nofollow" href="http://e.meituan.com/mobile/" target="_blank">Free open</a></li>
+          </ul>
+        </li>
+        <li class="has-child"><a rel="nofollow" href="http://www.meituan.com/account/userinfo/" target="_blank">Site Map</a>
+          <div class="header-nav-site header-nav-second" style="display: none;">
+            <dl class="header-jiulv header-nav-third"><dt>Hotel & Tourist</dt>
+              <dd><a href="http://www.meituan.com/iflight/" target="_blank">Flight icon-ticket-iconx</a></dd>
+              <dd><a href="http://www.meituan.com/train/" target="_blank">Train Ticket</a></dd>
+              <dd><a href="http://hotel.meituan.com/beijing/c20039/" target="_blank">Homestay</a></dd>
+              <dd><a href="http://hotel.meituan.com/beijing/c20041/" target="_blank">Hostel</a></dd>
+            </dl>
+            <dl class="header-meishi header-nav-third"><dt>Fooding</dt>
+              <dd><a href="http://bj.meituan.com/meishi/c20004/" target="_blank">Japanese Food Near Me</a></dd>
+              <dd><a href="http://bj.meituan.com/meishi/c36/" target="_blank">French Food Near Me</a></dd>
+              <dd><a href="http://bj.meituan.com/meishi/c54/" target="_blank">Itilian Food Near Me</a></dd>
+              <dd><a href="http://bj.meituan.com/meishi/c40/" target="_blank">Chinese Food Near Me</a></dd>
+              <dd><a href="http://bj.meituan.com/meishi/c17/" target="_blank">African Food Near Me</a></dd>
+              <dd><a href="http://bj.meituan.com/meishi/c393/" target="_blank">Coupon</a></dd>
+            </dl>
+            <dl class="header-movie header-nav-third"><dt>Beauty</dt>
+              <dd><a href="http://maoyan.com/films" target="_blank">Hair salon</a></dd>
+              <dd><a href="http://maoyan.com/cinemas" target="_blank">Nails</a></dd>
+              <dd><a href="http://maoyan.com/board" target="_blank">Ranking</a></dd>
+              <dd><a href="http://maoyan.com/board/6" target="_blank">Barber Shop</a></dd>
+            </dl>
+        </div>
+      </li>
+    </ul>
+  </nav>
+</div>
+</div>
+
+<div class="header-content clearfix">
+  <div class="header-title-module">
+    <div class="header-title">
+      <a href="//bj.meituan.com">
+        <a>Convenience</a>
+      </div>
+    </div>
+    <div class="header-search-module">
+      <div class="header-search-block">
+        <input class="header-search-input" type="text" placeholder="search">
+        <button class="header-search-btn">
+          <span class="header-icon icon-search"></span>
+        </button>
+      </div>
+      <div class="header-search-suggest" style="display: none;">
+        <div class="header-search-noinput">
+          <div class="header-search-history" style="display: none;">
+            <ul></ul>
+          </div>
+        </div>
+        <div class="header-search-hasinput">
+          <ul></ul>
+        </div>
+      </div>
+    </div>
+    <a class="header-commitment" href="http://www.meituan.com/commitment/" target="_blank">
+      <ul>
+        <li class="commitment-item">
+          <i class="header-icon icon-tui"></i>
+          <span>Cash Back</span></li>
+        <li class="commitment-item">
+          <i class="header-icon icon-tui2"></i>
+          <span>Free for unlike</span></li>
+        <li class="commitment-item">
+          <i class="header-icon icon-tui1"></i>
+          <span>Over time</span></li>
+      </ul>
+    </a>
+  </div>
+</header>
+
+<script>
+  window.comPtData = window.comPtData || {};
+  window.comPtData['header'] = {"currentCity":{
+    "id":1,"name":"北京","pinyin":"beijing","acronym":"bj","onlineTime":"1267632000","open":true,"rank":"S","locationId":"110000","position":{
+      "lat":39.9046669,"lng":116.4081955},
+      "divisionStr":"北京--北京",
+      "originGeotagID":0,
+      "realLocationID":"110000",
+      "provinceLocationID":"110000",
+      "gisID":"110100",
+      "chineseFullName":"北京市",
+      "isHot":1,"firstChar":"B",
+      "originCityID":0,
+      "recommend":1,
+      "newIndex":1,
+      "endTime":"2000000000"}}
+</script>
+<script src="dist/js/com_header.js" defer=""></script>
+
+<link rel="stylesheet" type="text/css" href="dist/css/index.css">
+
+<div id="react">
+  <div class="page index" data-reactroot>
+    <div class="index-consiner">
+      <div class="banner-container clearfix">
+        <div class="left-banner">
+          <div class="category-nav-container">
+            <div class="category-nav-title-wrapper">
+              <span class="category-nav-title">All CATEGORIES</span>
+                <span class="title-icon"></span>
+            </div>
+            <div class="category-nav-content-wrapper">
+              <ul><li class="nav-li">
+                <i class="home-category-iconfont hc-icon-food"></i>
+                  <span class="nav-text-wrapper">
+                    <span><a href="http://bj.meituan.com/meishi/" data-bid="b_atx2p7dc" data-lab="{&quot;custom&quot;:{&quot;cat_id&quot;:1,&quot;index&quot;:&quot;1_1&quot;,&quot;title&quot;:&quot;美食&quot;}}" class="link nav-text" target="_blank">Dining</a></span>
+                  </span>
+                <i class="nav-right-arrow"></i>
+              </li>
+              <li class="nav-li">
+                <i class="home-category-iconfont hc-icon-waimai"></i>
+                  <span class="nav-text-wrapper">
+                    <span><a href="http://waimai.meituan.com" data-bid="b_atx2p7dc" data-lab="{&quot;custom&quot;:{&quot;cat_id&quot;:10000007,&quot;index&quot;:&quot;2_1&quot;,&quot;title&quot;:&quot;外卖&quot;}}" class="link nav-text" target="_blank">On-demand delivering</a></span>
+                  </span>
+                <i class="nav-right-arrow"></i>
+              </li>
+              <li class="nav-li">
+                <i class="home-category-iconfont hc-icon-ktv"></i>
+                  <span class="nav-text-wrapper">
+                    <span><a href="http://bj.meituan.com/xiuxianyule/" data-bid="b_atx2p7dc" data-lab="{&quot;custom&quot;:{&quot;cat_id&quot;:2,&quot;index&quot;:&quot;7_1&quot;,&quot;title&quot;:&quot;休闲娱乐&quot;}}" class="link nav-text" target="_blank">Beauty</a> / </span>
+                  </span>
+                <i class="nav-right-arrow"></i>
+              </li>
+              <li class="nav-li">
+                <i class="home-category-iconfont hc-icon-medical"></i>
+                 <span class="nav-text-wrapper">
+                   <span><a href="http://bj.meituan.com/chongwu/c20691/" data-bid="b_atx2p7dc" data-lab="{&quot;custom&quot;:{&quot;cat_id&quot;:20691,&quot;index&quot;:&quot;15_2&quot;,&quot;title&quot;:&quot;宠物&quot;}}" class="link nav-text" target="_blank">Transportation</a></span>
+                 </span>
+                <i class="nav-right-arrow"></i>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class= "row">
+      <div class="cloumn">
+        <div class="right-banner">
+          <div class="banner-row clearfix">
+            <div class="item banner-slider shadow">
+              <div class="slider" id="banner-slider">
+                <div class="slider-content clearfix" style="width: 2820px;">
+                 <div class="slider-item" style="width: 470px; left: 0px; z-index: 9; opacity: 0; transition: opacity 0.5s;">
+                   <a href="http://hotel.meituan.com/" data-bid="b_a4enk0wd" data-lab="{&quot;custom&quot;:{&quot;index&quot;:&quot;1_1&quot;}}" class="link" target="_blank">
+                     <div class="slider-img-div" style="background-image: images/hotel-casino-chaves-spa-harmonia-sht81717400-460x300.jpg"></div></a>
+                  </div>
+              <div class="slider-item" style="width: 470px; left: -470px; z-index: 9; opacity: 0; transition: opacity 0.5s;">
+                <a href="/meishi/" data-bid="b_a4enk0wd" data-lab="{&quot;custom&quot;:{&quot;index&quot;:&quot;1_2&quot;}}" class="link" target="_blank">
+                  <div class="slider-img-div" style="background-image: images/Dining & Nightlife_Banff&Lake Louise Tourism.htm"></div></a>
+              </div>
+              <div class="slider-item" style="width: 470px; left: -940px; z-index: 50; opacity: 1; transition: opacity 0.5s;">
+                <a href="http://waimai.meituan.com/" data-bid="b_a4enk0wd" data-lab="{&quot;custom&quot;:{&quot;index&quot;:&quot;1_3&quot;}}" class="link" target="_blank">
+                  <div class="slider-img-div" style="background-image:url(http://p0.meituan.net/codeman/a97baf515235f4c5a2b1323a741e577185048.jpg)"></div></a>
+              </div>
+              <div class="slider-item" style="width: 470px; left: -1410px; z-index: 9; opacity: 0; transition: opacity 0.5s;">
+                <a href="http://maoyan.com/" data-bid="b_a4enk0wd" data-lab="{&quot;custom&quot;:{&quot;index&quot;:&quot;1_4&quot;}}" class="link" target="_blank">
+                  <div class="slider-img-div" style="background-image:url(http://p0.meituan.net/codeman/33ff80dc00f832d697f3e20fc030799560495.jpg)"></div></a>
+              </div>
+              <div class="slider-item" style="width: 470px; left: -1880px; z-index: 9; opacity: 0; transition: opacity 0.5s;">
+                <a href="https://pc.meituan.com/?activity_code=19_00038033" data-bid="b_a4enk0wd" data-lab="{&quot;custom&quot;:{&quot;index&quot;:&quot;1_5&quot;}}" class="link" target="_blank">
+                  <div class="slider-img-div" style="background-image:url(http://p1.meituan.net/codeman/bb0abb3435a60c44d87e90ed4237b61039329.jpg)"></div></a>
+              </div>
+              <div class="slider-item" style="width: 470px; left: -2350px; z-index: 9; opacity: 0; transition: opacity 0.5s;">
+                <a href="http://i.meituan.com/firework/cu1516248885" data-bid="b_a4enk0wd" data-lab="{&quot;custom&quot;:{&quot;index&quot;:&quot;1_6&quot;}}" class="link" target="_blank">
+                  <div class="slider-img-div" style="background-image:url(http://p0.meituan.net/codeman/368e0a984b54325d42b7811c3665ad93157188.jpg)"></div></a>
+              </div>
+            </div>
+            <div class="slider-pagination" id="banner-sliderpage" style="margin-left: 55px;">
+              <div class="pagination" style="background: rgb(255, 255, 255); opacity: 0.2;"></div>
+              <div class="pagination" style="background: rgb(255, 255, 255); opacity: 0.2;"></div>
+              <div class="pagination" style="background: rgb(255, 255, 255); opacity: 0.9;"></div>
+              <div class="pagination" style="background: rgb(255, 255, 255); opacity: 0.2;"></div>
+              <div class="pagination" style="background: rgb(255, 255, 255); opacity: 0.2;"></div>
+              <div class="pagination" style="background: rgb(255, 255, 255); opacity: 0.2;"></div>
+            </div>
+            <div class="btn btn-next" style="display:block">
+              <i class="iconfont icon-btn_right"></i>
+            </div>
+            <div class="btn btn-pre" style="display:block">
+              <i class="iconfont icon-btn_left"></i>
+            </div>
+          </div>
+        </div>
+        <a href="/xiuxianyule/" data-bid="b_a4enk0wd" data-lab="{&quot;custom&quot;:{&quot;index&quot;:2}}" class="link" target="_blank"><div class="item shadow pic-1" style="background-image:url(http://p0.meituan.net/codeman/e473bb428f070321269b23370ff02ba956209.jpg"></div></a>
+        <div class="item banner-logincard">
+          <div style="float:left">
+            <div class="login-container">
+              <div class="default" style="display:block">
+                <div class="head-img-row">
+                  <img src="//s0.meituan.net/bs/fe-web-meituan/2d05c2b/img/avatar.jpg" alt="">
+                </div>
+                <p class="user-name">Hi!</p>
+                <a class="btn-login" href="https://passport.meituan.com/account/unitivesignup?service=www&amp;continue=http%3A%2F%2Fwww.meituan.com%2Faccount%2Fsettoken%3Fcontinue%3Dhttp%253A%252F%252Fbj.meituan.com%252F">Sign in</a>
+                <a class="btn-login" href="https://passport.meituan.com/account/unitivelogin?service=www&amp;continue=http%3A%2F%2Fwww.meituan.com%2Faccount%2Fsettoken%3Fcontinue%3Dhttp%253A%252F%252Fbj.meituan.com%252F">Log in</a>
+              </div>
+              <div class="default" style="display:none">
+                <div class="setting">
+                  <a href="http://www.meituan.com/account/settings" target="_blank"><div class="icon"><i class="iconfont icon-setting_iconx"></i></div></a>
+                </div>
+                <div class="head-img-row">
+                  <a href="http://www.meituan.com/account/userinfo/" target="_blank"><img src="//s0.meituan.net/bs/fe-web-meituan/2d05c2b/img/avatar.jpg" alt=""></a>
+                </div>
+                <div class="nickname-row">
+                  <a href="http://www.meituan.com/account/userinfo/" target="_blank"><p class="user-name">Hello</p></a>
+                  <a href="http://www.meituan.com/account/userinfo/" target="_blank"><i class="iconfont iconfont_level icon-lable_level_undefined"></i></a>
+                </div>
+                <div class="fn-row clearfix">
+                  <div class="fn-item">
+                    <a href="http://www.meituan.com/orders/ " target="_blank"><div class="icon"><i class="iconfont icon-order_iconx"></i></div><p class="fn-name">My orders</p></a>
+                  </div>
+                  <div class="fn-item">
+                    <a href="http://www.meituan.com/rates/" target="_blank"><div class="icon"><i class="iconfont icon-comment_iconx"></i></div><p class="fn-name">My reviews</p></a>
+                  </div>
+                  <div class="fn-item">
+                    <a href="http://www.meituan.com/collections/" target="_blank"><div class="icon"><i class="iconfont icon-collection_iconx"></i></div><p class="fn-name">My Favorite</p></a>
+                  </div>
+                </div>
+                <div class="fn-row clearfix">
+                  <div class="fn-item">
+                    <a href="http://www.meituan.com/vouchers/" target="_blank"><div class="icon"><i class="iconfont icon-ticket_iconx"></i></div><p class="fn-name">Coupon</p></a>
+                  </div>
+                  <div class="fn-item">
+                    <a href="http://www.meituan.com/account/userinfo" target="_blank"><div class="icon"><i class="iconfont icon-money_iconx"></i></div><p class="fn-name">Sufficient Funds</p></a>
+                  </div>
+                  <div class="fn-item">
+                    <a href="http://www.meituan.com/account/userinfo/" target="_blank"><div class="icon"><i class="iconfont icon-more_iconx"></i></div><p class="fn-name">More</p></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+       </div>
+     </div>
+   </div>
+</div>
+</div>
+</div>
+
+</body>
+</html>
